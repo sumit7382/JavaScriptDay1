@@ -1,13 +1,13 @@
-let arr = [85, 97, 44, 37, 76, 60];
-let sum = 0;
+let arr = [250, 645, 300, 900, 50];
+let newArr = [0, 0 , 0, 0 , 0];
 
-for(let i of arr){
-    sum+=i;
+for(let i=0;i<arr.length; i++){
+    newArr[i] = arr[i]-(arr[i]*0.1);
 }
 
-let avg = sum/arr.length;
-
-console.log(avg);
+for(let i=0;i<arr.length;i++){
+    console.log(newArr[i]);
+}
 
 
 
